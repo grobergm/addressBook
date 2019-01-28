@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Address Book</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
@@ -11,6 +12,21 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <h1>Address Book</h1>
+    <div class="container">
+      <h1>Address Book</h1>
+      <h1 class="card-title">Add New Contact</h1>
+      <form id="newContactForm">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input class="form-control" id="firstName" type="text">
+          <label for="lastName">Last Name</label>
+          <input class="form-control" id="lastName" type="text">
+          <label for="phoneNumber">Phone Number</label>
+          <input class="form-control" id="phoneNumber" type="text">
+          <button class="btn btn-primary" type="submit">Add Contact</button>
+        </div>
+      </form>
+      <div class="row" id="results"></div>
+    </div>
   </body>
 </html>
